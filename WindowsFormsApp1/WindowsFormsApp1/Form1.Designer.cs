@@ -29,52 +29,38 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.香蕉 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // 香蕉
             // 
-            this.香蕉.AutoSize = true;
-            this.香蕉.Location = new System.Drawing.Point(233, 160);
+            this.香蕉.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.香蕉.Font = new System.Drawing.Font("新細明體", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.香蕉.ForeColor = System.Drawing.Color.Honeydew;
+            this.香蕉.Image = ((System.Drawing.Image)(resources.GetObject("香蕉.Image")));
+            this.香蕉.Location = new System.Drawing.Point(12, 9);
             this.香蕉.Name = "香蕉";
-            this.香蕉.Size = new System.Drawing.Size(29, 12);
+            this.香蕉.Size = new System.Drawing.Size(1214, 650);
             this.香蕉.TabIndex = 1;
-            this.香蕉.Text = "香蕉";
             this.香蕉.Click += new System.EventHandler(this.label1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(309, 160);
+            this.label1.Font = new System.Drawing.Font("微軟正黑體", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label1.Location = new System.Drawing.Point(803, 71);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 12);
+            this.label1.Size = new System.Drawing.Size(227, 81);
             this.label1.TabIndex = 2;
-            this.label1.Text = "一條10元";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(395, 157);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 3;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(542, 160);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 4;
+            this.label1.Text = "帥章魚";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(1218, 653);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.香蕉);
             this.Name = "Form1";
@@ -87,8 +73,6 @@ namespace WindowsFormsApp1
         #endregion
         private System.Windows.Forms.Label 香蕉;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
     }
 }
 
